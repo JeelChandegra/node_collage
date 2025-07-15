@@ -1,0 +1,40 @@
+// 1. Check Even or Odd function isEvenOrOdd(num) { return num % 2 === 0 ? "Even" : "Odd"; }
+
+// 2. Find Maximum of Two Numbers function maxOfTwo(a, b) { return a > b ? a : b; }
+
+// 3. Check Leap Year function isLeapYear(year) { return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? "Leap Year" : "Not Leap Year"; }
+
+// 4. Sum of Natural Numbers function sumOfNaturalNumbers(n) { return (n * (n + 1)) / 2; }
+
+// 5. Factorial of a Number function factorial(n) { let fact = 1; for (let i = 1; i <= n; i++) fact *= i; return fact; }
+
+// 6. Print Multiplication Table function multiplicationTable(n) { for (let i = 1; i <= 10; i++) { console.log(${n} x ${i} = ${n * i}); } }
+
+// 7. Reverse a Number function reverseNumber(n) { return parseInt(n.toString().split('').reverse().join('')); }
+
+// 8. Palindrome Check (Number) function isPalindrome(n) { return n.toString() === n.toString().split('').reverse().join('') ? "Palindrome" : "Not Palindrome"; }
+
+// 9. Check Prime Number function isPrime(n) { if (n <= 1) return "Not Prime"; for (let i = 2; i <= Math.sqrt(n); i++) { if (n % i === 0) return "Not Prime"; } return "Prime"; }
+
+// 10. Count Digits in a Number function countDigits(n) { return n.toString().length; }
+
+// 11. Sum of Digits function sumOfDigits(n) { return n.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0); }
+
+// 12. Check Armstrong Number function isArmstrong(n) { const digits = n.toString().split(''); const power = digits.length; const sum = digits.reduce((acc, d) => acc + Math.pow(parseInt(d), power), 0); return sum === n ? "Armstrong" : "Not Armstrong"; }
+
+// 13. Generate Fibonacci Series function fibonacciSeries(n) { let a = 0, b = 1; const series = [a]; for (let i = 1; i < n; i++) { series.push(b); [a, b] = [b, a + b]; } return series; }
+
+// 14. Check Vowel or Consonant function checkVowelOrConsonant(char) { return 'aeiouAEIOU'.includes(char) ? "Vowel" : "Consonant"; }
+
+// 15. Simple Calculator function calculator(a, op, b) { switch(op) { case '+': return a + b; case '-': return a - b; case '*': return a * b; case '/': return b !== 0 ? a / b : "Divide by zero error"; default: return "Invalid Operator"; } }
+
+// 16. Find GCD (HCF) function gcd(a, b) { while (b !== 0) { [a, b] = [b, a % b]; } return a; }
+
+// 17. Check Perfect Number function isPerfect(n) { let sum = 0; for (let i = 1; i <= n / 2; i++) { if (n % i === 0) sum += i; } return sum === n ? "Perfect" : "Not Perfect"; }
+
+// 18. Print All Divisors function printDivisors(n) { const divisors = []; for (let i = 1; i <= n; i++) { if (n % i === 0) divisors.push(i); } return divisors; }
+
+// 19. Number is Positive, Negative or Zero function checkSign(n) { return n > 0 ? "Positive" : n < 0 ? "Negative" : "Zero"; }
+
+// 20. Find Power (Exponentiation) function power(a, b) { return Math.pow(a, b); }
+
